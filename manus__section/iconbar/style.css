@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	width: 90px;
+	background-color: #555;
+}
+
+ul li {
+	cursor: pointer;
+	display: block;
+	padding: 16px;
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	transition: all 0.3s ease;
+}
+
+ul li:hover {
+	background-color: black;
+}
+
+ul li.active {
+	background-color: #04aa6d;
+	color: white;
+}
+
+ul li.active:nth-child(1) a i {
+	color: white;
+}
