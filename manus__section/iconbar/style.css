@@ -3,7 +3,18 @@
 	padding: 0;
 }
 
-ul {
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+main h2 {
+	font-family: "Courier New", Courier, monospace;
+	margin: 1rem 0pc;
+}
+
+ul.vertical__menu {
 	width: 90px;
 	background-color: #555;
 }
@@ -29,4 +40,28 @@ ul li.active {
 
 ul li.active:nth-child(1) a i {
 	color: white;
+}
+
+div.horizontal__menu {
+	width: 100%;
+	background-color: #555;
+}
+
+div.horizontal__menu a {
+	display: inline-block;
+	width: 20%;
+	font-size: 36px;
+	color: white;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	text-align: center;
+	padding-left: 0px;
+}
+
+a.active {
+	background-color: #04aa6d;
+}
+
+div.horizontal__menu a:hover {
+	background-color: black;
 }
