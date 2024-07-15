@@ -6,7 +6,7 @@
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 10px;
 }
 
 .vertical {
@@ -80,20 +80,28 @@ div.horizontal__menu a:hover {
 
 
 /* menu icon */
-#menu__icon {
+
+
+.menu__icon {
   cursor: pointer;
   display: inline-block;
   width: 35px;
   height: 29px; /* Adjust height to match the three divs' total height and margin */
   position: relative; /* To position the divs absolutely */
+	transform: translateX(-110px);
+	transition: .4s;
 }
 
-#menu__icon div {
+.menu__icon div {
   background-color: black;
   width: 100%;
   height: 5px;
   position: absolute; /* To position the divs within the container */
   transition: transform 0.4s, opacity 0.4s;
+}
+
+div.change {
+	transform: translateX(0px);
 }
 
 .div-1 {
