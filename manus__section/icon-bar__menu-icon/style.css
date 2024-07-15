@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.vertical {
+	display: flex;
+	gap: 20px;
+}
+
+h2 {
+	font-family: "Courier New", Courier, monospace;
+	margin: 1rem 0px;
+}
+
+ul.vertical__menu {
+	width: 90px;
+	background-color: #555;
+	transform: translateX(-90px);
+	opacity: 0;
+	transition: .4s;
+}
+
+ul.open {
+	transform: translateX(0);
+	opacity: 1;
+}
+
+ul li {
+	cursor: pointer;
+	display: block;
+	padding: 16px;
+	color: white;
+	text-align: center;
+	font-size: 36px;
+	transition: all 0.3s ease;
+}
+
+ul li:hover {
+	background-color: black;
+}
+
+ul li.active {
+	background-color: #04aa6d;
+	color: white;
+}
+
+ul li.active:nth-child(1) a i {
+	color: white;
+}
+
+div.horizontal__menu {
+	width: 100%;
+	background-color: #555;
+}
+
+div.horizontal__menu a {
+	display: inline-block;
+	width: 20%;
+	font-size: 36px;
+	color: white;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	text-align: center;
+}
+
+a.active {
+	background-color: #04aa6d;
+}
+
+div.horizontal__menu a:hover {
+	background-color: black;
+}
+
+
+/* menu icon */
+#menu__icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 35px;
+  height: 29px; /* Adjust height to match the three divs' total height and margin */
+  position: relative; /* To position the divs absolutely */
+}
+
+#menu__icon div {
+  background-color: black;
+  width: 100%;
+  height: 5px;
+  position: absolute; /* To position the divs within the container */
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.div-1 {
+  top: 0; /* Top bar */
+}
+
+.div-2 {
+  top: 12px; /* Middle bar, adjust as needed */
+}
+
+.div-3 {
+  top: 24px; /* Bottom bar */
+}
+
+.change .div-1 {
+  transform: translateY(12px) rotate(-45deg);
+}
+
+.change .div-2 {
+  opacity: 0;
+}
+
+.change .div-3 {
+  transform: translateY(-12px) rotate(45deg);
+}
