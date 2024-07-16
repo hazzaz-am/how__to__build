@@ -1,0 +1,49 @@
+* {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	border: none;
+	outline: none;
+	width: 100%;
+	text-align: left;
+	padding: 18px;
+	transition: 0.4s;
+	cursor: pointer;
+	transition: 0.4s;
+  font-size: 15px;
+}
+
+.active,
+.accordion:hover {
+	background-color: #ccc;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion::after {
+	content: "\02795";
+	font-size: 13px;
+	color: #777;
+	float: right;
+}
+
+.active::after {
+	content: "\2796";
+}
