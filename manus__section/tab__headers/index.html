@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tab Headers</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<section>
+				<h2>Tab Headers</h2>
+				<p>Click on the "city" buttons to display the appropriate header:</p>
+				<div class="contents">
+					<div id="London" class="tabContent">
+						<h1>London</h1>
+						<p>London is the capital city of England.</p>
+					</div>
+					<div id="Paris" class="tabContent">
+						<h1>Paris</h1>
+						<p>Paris is the capital city of France.</p>
+					</div>
+					<div id="Tokyo" class="tabContent">
+						<h1>Tokyo</h1>
+						<p>Tokyo is the capital city of Japan.</p>
+					</div>
+					<div id="Oslo" class="tabContent">
+						<h1>Oslo</h1>
+						<p>Oslo is the capital city of Norway.</p>
+					</div>
+				</div>
+				<div class="buttons">
+					<button
+						class="tabLink"
+						id="defaultOpen"
+						onclick="openCity('London', this, 'red')"
+					>
+						London
+					</button>
+					<button class="tabLink" onclick="openCity('Paris', this, 'green')">
+						Paris
+					</button>
+					<button class="tabLink" onclick="openCity('Tokyo', this, 'blue')">
+						Tokyo
+					</button>
+					<button class="tabLink" onclick="openCity('Oslo', this, 'orange')">
+						Oslo
+					</button>
+				</div>
+			</section>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+section {
+	min-width: 90%;
+	margin: auto;
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons button {
+	width: 25%;
+	padding: 14px 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 17px;
+	background-color: #555;
+	color: white;
+}
+
+.buttons button:hover {
+	background-color: #777;
+}
+
+#London {
+  background-color: red;
+}
+
+#Paris {
+  background-color: green;
+}
+
+#Tokyo {
+  background-color: blue;
+}
+
+#Oslo {
+  background-color: orange;
+}
+
+.contents {
+  margin-top: 1rem;
+}
+
+.tabContent {
+	padding: 50px;
+	text-align: center;
+  color: white;
+}
