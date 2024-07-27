@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hover Tabs</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<section>
+				<h2>Hover Tabs</h2>
+				<p>
+					Move the mouse over one of the menu buttons to show the tab content:
+				</p>
+				<div class="tabs">
+					<div class="buttons">
+						<button
+							id="defaultOpen"
+							class="tabLink"
+							onmouseover="openCity(this, 'London')"
+						>
+							London
+						</button>
+						<button class="tabLink" onmouseover="openCity(this, 'Paris')">
+							Paris
+						</button>
+						<button class="tabLink" onmouseover="openCity(this, 'Tokyo')">
+							Tokyo
+						</button>
+					</div>
+					<div class="contents">
+						<div id="London" class="tabContent">
+							<h3>London</h3>
+							<p>London is the capital city of England.</p>
+						</div>
+						<div id="Paris" class="tabContent">
+							<h3>Paris</h3>
+							<p>Paris is the capital city of France.</p>
+						</div>
+						<div id="Tokyo" class="tabContent">
+							<h3>Tokyo</h3>
+							<p>Tokyo is the capital city of Japan.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>

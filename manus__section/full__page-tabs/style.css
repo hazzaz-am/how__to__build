@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	min-width: 90%;
+	margin: auto;
+}
+
+.header {
+	margin-bottom: 1rem;
+}
+
+.buttons {
+	display: flex;
+}
+
+.buttons button {
+	width: 25%;
+	padding: 14px 16px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 17px;
+	background-color: #555;
+	color: white;
+	transition: 0.4s;
+}
+
+.buttons button:hover {
+	background-color: #777;
+}
+
+.tabContent {
+	padding: 100px 20px;
+	color: white;
+}
+
+#Home {
+	background-color: red;
+}
+#News {
+	background-color: green;
+}
+#Contact {
+	background-color: blue;
+}
+#About {
+	background-color: orange;
+}
