@@ -17,6 +17,10 @@ nav {
 	margin-bottom: 1rem;
 }
 
+.section__header {
+  padding: 1rem;
+}
+
 .hamburger {
 	display: none;
 }
