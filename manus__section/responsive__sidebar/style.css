@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+section {
+	display: flex;
+}
+
+section .navbar {
+	width: 200px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	background-color: #f1f1f1;
+	height: 100%;
+}
+
+section .navbar li {
+	padding: 16px;
+	cursor: pointer;
+}
+
+section .navbar li.active {
+	background-color: #04aa6d;
+	color: white;
+}
+
+section .navbar li:hover:not(.active) {
+	background-color: #555;
+}
+
+section .navbar li:hover:not(.active) a {
+	color: white;
+}
+
+section .navbar li.active a {
+	color: white;
+}
+
+section .navbar a {
+	color: black;
+	text-decoration: none;
+}
+
+section .content {
+	margin-left: 210px;
+	padding: 1rem;
+	height: 2000px;
+}
+
+section .content h2,
+p {
+	margin-bottom: 1rem;
+}
+
+/* tablet */
+
+@media screen and (max-width: 800px) {
+	section {
+		flex-direction: column;
+	}
+
+	section .navbar {
+		width: 100%;
+		position: relative;
+		height: auto;
+	}
+
+	section .navbar ul {
+		display: flex;
+	}
+
+	section .content {
+		margin-left: 0;
+	}
+}
+
+/* mobile */
+
+@media screen and (max-width: 500px) {
+	section .navbar ul {
+		flex-direction: column;
+	}
+
+	section .navbar li {
+		text-align: center;
+	}
+}
