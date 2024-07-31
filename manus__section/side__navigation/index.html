@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Side Navigation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<!-- navigation -->
+			<section>
+				<nav id="nav__menu" class="nav__menu">
+					<a
+						onclick="closeNav()"
+						class="close__btn"
+						id="close__btn"
+						href="javascript:void(0)"
+						>&times;</a
+					>
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Client</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</section>
+
+			<!-- buttons content -->
+			<section class="buttons__content" id="buttons__content">
+				<div class="section__heading">
+					<h2>Animated Sidenav Example</h2>
+					<p>Click on the element below to open the side navigation menu.</p>
+				</div>
+				<div class="buttons" id="buttons">
+					<button class="button" onclick="openNav()">Sidenav Overlay</button>
+					<button
+						class="button push__canvas"
+						id="push__canvas"
+						onclick="pushCanvas()"
+					>
+						Sidenav push(off-Canvas)
+					</button>
+					<button
+						onclick="pushCanvasOpacity()"
+						class="button canvas__opacity"
+						id="canvas__opacity"
+					>
+						Sidenav push(opacity)
+					</button>
+					<button
+						id="full__width-nav"
+						onclick="fullWidthNav()"
+						class="button full__width-nav"
+					>
+						Sidenav push(full-width)
+					</button>
+				</div>
+			</section>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>
