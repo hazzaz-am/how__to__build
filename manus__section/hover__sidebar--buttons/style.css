@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+section {
+	display: flex;
+	padding: 2rem;
+	gap: 3rem;
+}
+
+.content h2 {
+	margin-bottom: 0.5rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.buttons button {
+	padding: 15px;
+	border: none;
+	position: absolute;
+	left: -100px;
+	font-size: 20px;
+	transition: 0.4s;
+	cursor: pointer;
+	color: white;
+	width: 150px;
+	text-align: left;
+	border-radius: 0 5px 5px 0;
+}
+
+.buttons button:hover {
+	left: 0;
+}
+
+.about {
+	background-color: #04aa6d;
+	top: 40px;
+}
+
+.blogs {
+	top: 100px;
+	background-color: #2196f3;
+}
+
+.contact {
+	top: 160px;
+	background-color: #555;
+}
+
+.projects {
+	top: 220px;
+	background-color: #f44336;
+}
