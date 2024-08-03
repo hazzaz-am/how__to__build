@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Overlay Navigation</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<section>
+				<nav id="main__nav">
+					<div class="close">
+						<a href="javascript:void()" class="closeButton" onclick="closeNav()"
+							>&times;</a
+						>
+					</div>
+
+					<ul>
+						<li><a href="">About</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Clients</a></li>
+						<li><a href="">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<div class="content">
+					<h2>Fullscreen Overlay Nav Example</h2>
+					<p>
+						Click on the element below to open the fullscreen overlay navigation
+						menu.
+					</p>
+					<p>
+						In this example, the navigation menu will slide in, from left to
+						right:
+					</p>
+					<button onclick="openNav()">Slide Right</button>
+				</div>
+			</section>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>
